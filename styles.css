@@ -1,0 +1,188 @@
+<style>
+      /* Base Styling */
+      body {
+        font-family: Tahoma, Geneva, sans-serif;
+        background-color: #008080;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .window {
+        background-color: #e0e0e0;
+        border: 2px solid #808080;
+        box-shadow: 2px 2px 0px #404040, -2px -2px 0px white;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title-bar {
+        background-color: #000080;
+        color: white;
+        padding: 5px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .menu-bar {
+        background-color: #c0c0c0;
+        border-bottom: 2px solid #808080;
+        display: flex;
+        padding: 0;
+        gap: 0;
+      }
+
+      .menu-bar button {
+        background-color: #c0c0c0;
+        color: black;
+        border: 2px solid #404040;
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: inset 1px 1px 0px white, inset -1px -1px 0px #404040;
+        margin: 0;
+      }
+
+      .menu-bar button:hover {
+        background-color: #e0e0e0;
+      }
+
+      .top-half {
+        padding: 10px;
+        border-bottom: 1px solid #808080;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .bottom-half {
+        flex: 2;
+        display: flex;
+        overflow: hidden;
+      }
+
+      .post-links {
+        width: 30%;
+        border-right: 1px solid #808080;
+        padding: 10px;
+        overflow-y: auto;
+        background-color: #f0f0f0;
+      }
+
+      .post-links ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .post-links li {
+        margin-bottom: 10px;
+      }
+
+      .post-links a {
+        text-decoration: none;
+        color: #000080;
+        font-weight: bold;
+      }
+
+      .post-links a:hover {
+        text-decoration: underline;
+      }
+
+      .post-content {
+        flex: 1;
+        padding: 10px;
+        overflow-y: auto;
+        background-color: #ffffff;
+      }
+
+      /* Taskbar */
+      .taskbar {
+        background-color: #c0c0c0;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid #808080;
+        box-shadow: inset 1px 1px 0px white, inset -1px -1px 0px #404040;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .start-button {
+        margin-left: 10px;
+        background-color: #008000;
+        color: white;
+        border: 2px solid #404040;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: inset 1px 1px 0px white, inset -1px -1px 0px #404040;
+      }
+
+      .start-button:hover {
+        background-color: #00a000;
+      }
+
+      .popup {
+        display: none;
+        position: absolute;
+        bottom: 50px;
+        left: 10px;
+        background-color: #e0e0e0;
+        border: 2px solid #808080;
+        box-shadow: 2px 2px 0px #404040, -2px -2px 0px white;
+        padding: 10px;
+        width: 200px;
+        animation: fadeIn 0.3s ease-out;
+      }
+
+      .popup ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .popup li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .popup img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .clock {
+        margin-right: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #e0e0e0;
+        border: 2px solid #404040;
+        padding: 5px 10px;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
