@@ -55,22 +55,44 @@
         background-color: #e0e0e0;
       }
 
-      .top-half {
-        padding: 10px;
-        border-bottom: 1px solid #808080;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
+.top-half {
+  flex: 0.5; /* Shrinks Welcome section */
+  padding: 10px;
+  border-bottom: 1px solid #808080;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
-      .bottom-half {
-        flex: 2;
-        display: flex;
-        overflow: hidden;
-      }
+.bottom-half {
+  flex: 3; /* Expands content area */
+  display: flex;
+  overflow: hidden;
+}
+
+.post-content {
+  flex: 1;
+  padding: 20px; /* Adds padding for readability */
+  overflow-y: auto;
+  background-color: #ffffff;
+  font-size: 16px; /* Larger text size */
+  line-height: 1.6; /* Improved line spacing */
+  color: #333333; /* Softer text color */
+  font-family: Georgia, serif; /* More readable font */
+}
+
+.post-content h2 {
+  font-size: 20px;
+  color: #000080; /* Highlights headings */
+  margin-bottom: 10px;
+}
+
+.post-content p {
+  margin-bottom: 15px; /* Adds space between paragraphs */
+  text-align: justify; /* Justifies text for a clean look */
+}
 
       .post-links {
         width: 30%;
@@ -98,14 +120,7 @@
 
       .post-links a:hover {
         text-decoration: underline;
-      }
-
-      .post-content {
-        flex: 1;
-        padding: 10px;
-        overflow-y: auto;
-        background-color: #ffffff;
-      }
+   }
 
       /* Taskbar */
       .taskbar {
