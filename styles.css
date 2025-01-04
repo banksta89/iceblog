@@ -185,4 +185,17 @@
           opacity: 1;
         }
       }
+@media (max-width: 768px) {
+  .bottom-half {
+    flex-direction: column;
+  }
+  .post-links {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #808080;
+  }
+  .post-content {
+    flex: 1;
+  }
+}
     </style>
